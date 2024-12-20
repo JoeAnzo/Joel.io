@@ -1,0 +1,134 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body{
+  background-image:url("images/back.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.wrapper{
+  background:rgbaa(0,0,0,0);
+  backdrop-filter:blur(10px);
+  width:350px;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  overflow:scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.input-field{
+  margin:0 auto;
+  display:flex;
+  flex-direction:row;
+  input {
+    align-self:center;
+  }
+}
+.add{
+  width:50px;
+}
+.main-heading{
+  color: rgb(17, 180, 126);
+  margin-top:50px;
+  margin-bottom:80px;
+  font-family:oswald;
+  text-align:center;
+  font-size:30px;
+  font-weight:700;
+}
+input{
+  all:unset;
+  height:50px;
+  font-family:oswald;
+  color:white;
+  font-size:20px;
+  border:2px solid rgb(17, 180, 126);
+  border-radius:10px;
+  font-weight:700;
+}
+.add-btn{
+  background:transparent;
+  border:none;
+  cursor:pointer;
+  align-self:center;
+}
+.add{
+  width:50px;
+  height:50px;
+}
+ol li {
+  font-family:oswald;
+  font-size:20px;
+  color:white;
+  font-weight:700;
+  background-color:rgb(17, 180, 126);
+  border-radius:10px;
+  text-align:center;
+  padding:20px;
+  margin-top:10px;
+  list-style-position:outside;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ol{
+  padding-left:30px;
+}
+#delete-btn img{
+  height:30px;
+  width:30px;
+}
+#done-btn img{
+  height:30px;
+  width:30px;
+}
+#delete-btn,#done-btn{
+  padding:5px;
+  border-radius:50%;
+  border:none;
+  background:transparent;
+  cursor:pointer;
+}
+
+@media  screen and (min-width:320px) {
+  h2  {
+    font-size:30px;
+  }
+ .wrapper{
+  width:300px;
+  border-radius:10px;
+  border:1px solid white;
+ }
+ body{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+ }
+ ol {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:0;
+ }
+ .main-heading{
+   margin-bottom:20px;
+   margin-top:20px;
+ }
+ .input-field{
+  padding:25px;
+  display:flex;
+  flex-direction:column;
+   }
+   .add-btn{
+    margin-top:20px;
+   }
+}
